@@ -88,35 +88,17 @@ Links and Images
     
 
     <item>
-      <title>Hello World</title>
-      <link>https://example.org/post/hello/</link>
-      <pubDate>Tue, 22 Jul 2025 11:00:00 -0700</pubDate>
-      <author>shzuo24@m.fudan.edu.cn (Haruki)</author>
-      <guid>https://example.org/post/hello/</guid>
-      <description>
-        <![CDATA[<h1>Hello World</h1><p>作者：Haruki（shzuo24@m.fudan.edu.cn）</p>
-        
-          <p>💘 博麗 霊夢 💘</p>
-        
-        <hr><p>本文2025-07-22首发于<a href='https://example.org/'>ハルキの店</a>，最后修改于2025-07-22</p>]]>
-      </description>
-      
-    </item>
-    
-    
-
-    <item>
-      <title>Hello World</title>
+      <title>Transformer torch 实现</title>
       <link>https://example.org/post/2024-11-16-transformer/</link>
       <pubDate>Tue, 22 Jul 2025 11:00:00 -0700</pubDate>
       <author>shzuo24@m.fudan.edu.cn (Haruki)</author>
       <guid>https://example.org/post/2024-11-16-transformer/</guid>
       <description>
-        <![CDATA[<h1>Hello World</h1><p>作者：Haruki（shzuo24@m.fudan.edu.cn）</p>
+        <![CDATA[<h1>Transformer torch 实现</h1><p>作者：Haruki（shzuo24@m.fudan.edu.cn）</p>
         
-          <h1 id="transformer-torch实现">
-<a class="header-anchor" href="#transformer-torch%e5%ae%9e%e7%8e%b0"></a>
-Transformer torch实现
+          <h1 id="transformer-torch-实现">
+<a class="header-anchor" href="#transformer-torch-%e5%ae%9e%e7%8e%b0"></a>
+Transformer torch 实现
 </h1><h1 id="preparing">
 <a class="header-anchor" href="#preparing"></a>
 Preparing
@@ -143,10 +125,28 @@ Preparing
 <li>n_heads: 自注意力多头的头数.</li>
 <li>p_drop: Dropout的概率.</li>
 </ul>
-<h1 id="mask">
-<a class="header-anchor" href="#mask"></a>
-MASK
+<h1 id="two-mask">
+<a class="header-anchor" href="#two-mask"></a>
+TWO MASK
 </h1><p>MASK有两种，一种是因为在数据中使用了padding, 不希望pad被加入到注意力中进行计算的Pad Mask for Attention, 还有一种是保证Decoder自回归信息不泄露的Subsequent Mask for Decoder.</p>
+        
+        <hr><p>本文2025-07-22首发于<a href='https://example.org/'>ハルキの店</a>，最后修改于2025-07-22</p>]]>
+      </description>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>Hello World</title>
+      <link>https://example.org/post/hello/</link>
+      <pubDate>Tue, 22 Jul 2025 11:00:00 -0700</pubDate>
+      <author>shzuo24@m.fudan.edu.cn (Haruki)</author>
+      <guid>https://example.org/post/hello/</guid>
+      <description>
+        <![CDATA[<h1>Hello World</h1><p>作者：Haruki（shzuo24@m.fudan.edu.cn）</p>
+        
+          <p>💘 博麗 霊夢 💘</p>
         
         <hr><p>本文2025-07-22首发于<a href='https://example.org/'>ハルキの店</a>，最后修改于2025-07-22</p>]]>
       </description>

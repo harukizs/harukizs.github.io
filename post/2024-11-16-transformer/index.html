@@ -8,7 +8,7 @@
   name="viewport"
   content="width=device-width, initial-scale=1, shrink-to-fit=no"
 /><title>
-  Hello World | Haruki
+  Transformer torch 实现 | Haruki
 </title>
 <meta
   name="description"
@@ -52,7 +52,7 @@
     integrity="sha384-d2Yn1/9Iw78r3oqwk5B&#43;EcpRcmepXR5LyhmRF2a&#43;WoSe9mpRGvVk0ZviFwDGDOTO" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
   /><link rel="stylesheet" href="/css/loader.min.f91418ee1315126ca3cf086a3dd26c47127435aa83311ef0aabf8c08793b90e8.css" />
 <meta property="og:type" content="website" />
-  <meta property="og:title" content="Hello World | Haruki" />
+  <meta property="og:title" content="Transformer torch 实现 | Haruki" />
   <meta
     property="og:description"
     content="It&#39;s MyGo!!!!!"
@@ -141,9 +141,9 @@
   </nav>
   <nav id="sub-nav"></nav></div>
 <header id="header"><picture></picture>
-    <img  fetchpriority="high" src="/images/gallery/22.png" alt="Hello World"><div id="header-outer">
+    <img  fetchpriority="high" src="/images/gallery/22.png" alt="Transformer torch 实现"><div id="header-outer">
     <div id="header-title"><a href="/" id="logo">
-            <h1 data-aos="slide-up">Hello World</h1>
+            <h1 data-aos="slide-up">Transformer torch 实现</h1>
           </a><h2 id="subtitle-wrap" data-aos="slide-down"></h2></div>
   </div>
 </header><div id="content"
@@ -319,9 +319,9 @@
 </div>
 <div class="article-category"></div>
 </div>
-    <div class="hr-line"></div><div class="e-content article-entry" itemprop="articleBody"><h1 id="transformer-torch实现">
-<a class="header-anchor" href="#transformer-torch%e5%ae%9e%e7%8e%b0"></a>
-Transformer torch实现
+    <div class="hr-line"></div><div class="e-content article-entry" itemprop="articleBody"><h1 id="transformer-torch-实现">
+<a class="header-anchor" href="#transformer-torch-%e5%ae%9e%e7%8e%b0"></a>
+Transformer torch 实现
 </h1><h1 id="preparing">
 <a class="header-anchor" href="#preparing"></a>
 Preparing
@@ -348,9 +348,9 @@ Preparing
 <li>n_heads: 自注意力多头的头数.</li>
 <li>p_drop: Dropout的概率.</li>
 </ul>
-<h1 id="mask">
-<a class="header-anchor" href="#mask"></a>
-MASK
+<h1 id="two-mask">
+<a class="header-anchor" href="#two-mask"></a>
+TWO MASK
 </h1><p>MASK有两种，一种是因为在数据中使用了padding, 不希望pad被加入到注意力中进行计算的Pad Mask for Attention, 还有一种是保证Decoder自回归信息不泄露的Subsequent Mask for Decoder.</p>
 <p>在Encoder和Decoder中使用Mask的情况可能各有不同:</p>
 <ul>
@@ -1070,22 +1070,14 @@ Training
   </div><nav
     id="article-nav"
     data-aos="fade-up"
-  ><div class="article-nav-link-wrap article-nav-link-left"><img
-              data-src="/images/gallery/5.png"
+  ><div class="article-nav-link-wrap article-nav-link-right"><img
+              data-src="/images/gallery/21.png"
               data-sizes="auto"
               alt="Hello World"
               class="lazyload"
             /><a href="/post/hello/"></a>
-        <div class="article-nav-caption">前一篇</div>
-        <h3 class="article-nav-title">Hello World</h3>
-      </div><div class="article-nav-link-wrap article-nav-link-right"><img
-              data-src="/images/gallery/18.png"
-              data-sizes="auto"
-              alt="MarkDown Test"
-              class="lazyload"
-            /><a href="/post/markdown_test/"></a>
         <div class="article-nav-caption">后一篇</div>
-        <h3 class="article-nav-title">MarkDown Test</h3>
+        <h3 class="article-nav-title">Hello World</h3>
       </div></nav></article></section>
         </div><footer id="footer">
   <div style="width: 100%; overflow: hidden">
@@ -1273,9 +1265,9 @@ Training
   <div><script data-pjax>
         window.REIMU_POST = {
           author: "Haruki",
-          title: "Hello World",
+          title: "Transformer torch 实现",
           url: "https:\/\/example.org\/post\/2024-11-16-transformer\/",
-          description: "\rTransformer torch实现\rPreparing\r导包\nimport torch from torch import nn from torch import optim from torch.utils import data as Data import numpy as np 超参数设置\nd_model = 512 # embedding size max_len = 1024 # max length of sequence d_ff = 2048 # feed forward neural network dimension d_k = d_v = 64 # …",
+          description: "\rTransformer torch 实现\rPreparing\r导包\nimport torch from torch import nn from torch import optim from torch.utils import data as Data import numpy as np 超参数设置\nd_model = 512 # embedding size max_len = 1024 # max length of sequence d_ff = 2048 # feed forward neural network dimension d_k = d_v = 64 # …",
           cover: "https:\/\/example.org\/images\/gallery\/22.png",
         };
       </script><script src="/js/insert_highlight.js" integrity="" crossorigin="anonymous" data-pjax></script><script type="module" data-pjax>const PhotoSwipeLightbox = (await safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js", "sha384-DiL6M\/gG\u002bwmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF\/N6lrZi\/")).default;const pswp = () => {
