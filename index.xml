@@ -103,5 +103,55 @@ Links and Images
       
     </item>
     
+    
+
+    <item>
+      <title>Hello World</title>
+      <link>https://example.org/post/2024-11-16-transformer/</link>
+      <pubDate>Tue, 22 Jul 2025 11:00:00 -0700</pubDate>
+      <author>shzuo24@m.fudan.edu.cn (Haruki)</author>
+      <guid>https://example.org/post/2024-11-16-transformer/</guid>
+      <description>
+        <![CDATA[<h1>Hello World</h1><p>作者：Haruki（shzuo24@m.fudan.edu.cn）</p>
+        
+          <h1 id="transformer-torch实现">
+<a class="header-anchor" href="#transformer-torch%e5%ae%9e%e7%8e%b0"></a>
+Transformer torch实现
+</h1><h1 id="preparing">
+<a class="header-anchor" href="#preparing"></a>
+Preparing
+</h1><p>导包</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">torch</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">torch</span> <span class="kn">import</span> <span class="n">nn</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">torch</span> <span class="kn">import</span> <span class="n">optim</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">torch.utils</span> <span class="kn">import</span> <span class="n">data</span> <span class="k">as</span> <span class="n">Data</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span></code></pre></div><p>超参数设置</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">d_model</span> <span class="o">=</span> <span class="mi">512</span>  <span class="c1"># embedding size</span>
+</span></span><span class="line"><span class="cl"><span class="n">max_len</span> <span class="o">=</span> <span class="mi">1024</span>  <span class="c1"># max length of sequence</span>
+</span></span><span class="line"><span class="cl"><span class="n">d_ff</span> <span class="o">=</span> <span class="mi">2048</span>  <span class="c1"># feed forward neural network dimension</span>
+</span></span><span class="line"><span class="cl"><span class="n">d_k</span> <span class="o">=</span> <span class="n">d_v</span> <span class="o">=</span> <span class="mi">64</span>  <span class="c1"># dimension of k (same as q) and v</span>
+</span></span><span class="line"><span class="cl"><span class="n">n_layers</span> <span class="o">=</span> <span class="mi">6</span>  <span class="c1"># number of encoder ans decoder layers</span>
+</span></span><span class="line"><span class="cl"><span class="n">n_heads</span> <span class="o">=</span> <span class="mi">8</span>  <span class="c1"># number of heads in multi head attention</span>
+</span></span><span class="line"><span class="cl"><span class="n">p_drop</span> <span class="o">=</span> <span class="mf">0.1</span>  <span class="c1"># probability of dropout</span>
+</span></span></code></pre></div><ul>
+<li>d_model: Embedding的大小.</li>
+<li>max_len: 输入序列的最长大小.</li>
+<li>d_ff: 前馈神经网络的隐藏层大小, 一般是d_model的四倍.</li>
+<li>d_k, d_v: 自注意力中K和V的维度, Q的维度直接用K的维度代替, 因为这二者必须始终相等.</li>
+<li>n_layers: Encoder和Decoder的层数.</li>
+<li>n_heads: 自注意力多头的头数.</li>
+<li>p_drop: Dropout的概率.</li>
+</ul>
+<h1 id="mask">
+<a class="header-anchor" href="#mask"></a>
+MASK
+</h1><p>MASK有两种，一种是因为在数据中使用了padding, 不希望pad被加入到注意力中进行计算的Pad Mask for Attention, 还有一种是保证Decoder自回归信息不泄露的Subsequent Mask for Decoder.</p>
+        
+        <hr><p>本文2025-07-22首发于<a href='https://example.org/'>ハルキの店</a>，最后修改于2025-07-22</p>]]>
+      </description>
+      
+    </item>
+    
   </channel>
 </rss>

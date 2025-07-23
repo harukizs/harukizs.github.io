@@ -6,6 +6,12 @@
     "updated": "2025-07-23 00:00:00"
   }, 
   {
+    "objectID": "6dda8960d2d4725a38f7adafe476a0c2fc177213",
+    "permalink": "/post/2024-11-16-transformer/",
+    "title": "Hello World","content": "\rTransformer torch实现\rPreparing\r导包\nimport torch from torch import nn from torch import optim from torch.utils import data as Data import numpy as np 超参数设置\nd_model = 512 # embedding size max_len = 1024 # max length of sequence d_ff = 2048 # feed forward neural network dimension d_k = d_v = 64 # dimension of k (same as q) and v n_layers = 6 # number of encoder ans decoder layers n_heads = 8 # number of heads in multi head attention p_drop = 0.1 # probability of dropout d_model: Embedding的大小. max_len: 输入序列的最长大小. d_ff: 前馈神经网络的隐藏层大小, 一般是d_model的四倍. d_k, d_v: 自注意力中K和V的维度, Q的维度直接用K的维度代替, 因为这二者必须始终相等. n_layers: Encoder和Decoder的层数. n_heads: 自注意力多头的头数. p_drop: Dropout的概率. MASK\rMASK有两种，一种是因为在数据中使用了padding, 不希望pad被加入到注意力中进行计算的Pad Mask for Attention, 还有一种是保证Decoder自回归信息不泄露的Subsequent Mask for Decoder.\n在Encoder和Decoder中使用Mask的情况可能各有不同:\n在Encoder中使用Mask, 是为了将encoder_input中没有内容而打上PAD的部分进行Mask, 方便矩阵运算. 在Decoder中使用Mask, 可能是在Decoder的自注意力对decoder_input 的PAD进行Mask, 也有可能是对Encoder - Decoder自注意力时对encoder_input …","date": "2025-07-22 11:00:00",
+    "updated": "2025-07-22 11:00:00"
+  }, 
+  {
     "objectID": "5f98474743e52347613b2e0c682fa859935c78fa",
     "permalink": "/post/hello/",
     "title": "Hello World","content": "💘 博麗 霊夢 💘\n","date": "2025-07-22 11:00:00",
