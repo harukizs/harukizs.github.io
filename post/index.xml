@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ハルキの店</title>
-    <link>http://localhost:6581/post/</link>
+    <link>http://localhost:1313/post/</link>
     <description>Recent content from ハルキの店</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
@@ -12,27 +12,93 @@
     
     <copyright>本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</copyright>
     
-    <lastBuildDate>Wed, 15 Mar 2023 11:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 23 Jul 2025 00:00:00 +0000</lastBuildDate>
     
     
-    <atom:link href="http://localhost:6581/post/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
     
 
     <item>
-      <title>Hello World</title>
-      <link>http://localhost:6581/post/hello/</link>
-      <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
+      <title>MarkDown Test Page</title>
+      <link>http://localhost:1313/post/markdown_test/</link>
+      <pubDate>Wed, 23 Jul 2025 00:00:00 &#43;0000</pubDate>
       <author>shzuo24@m.fudan.edu.cn (Haruki)</author>
-      <guid>http://localhost:6581/post/hello/</guid>
+      <guid>http://localhost:1313/post/markdown_test/</guid>
+      <description>
+        <![CDATA[<h1>MarkDown Test Page</h1><p>作者：Haruki（shzuo24@m.fudan.edu.cn）</p>
+        
+          <h2 id="markdown-test-page">
+<a class="header-anchor" href="#markdown-test-page"></a>
+Markdown Test Page
+</h2><p>This is a test page for markdown rendering.</p>
+<h3 id="headings">
+<a class="header-anchor" href="#headings"></a>
+Headings
+</h3><h1 id="heading-1">
+<a class="header-anchor" href="#heading-1"></a>
+Heading 1
+</h1><h2 id="heading-2">
+<a class="header-anchor" href="#heading-2"></a>
+Heading 2
+</h2><h3 id="heading-3">
+<a class="header-anchor" href="#heading-3"></a>
+Heading 3
+</h3><h4 id="heading-4">
+<a class="header-anchor" href="#heading-4"></a>
+Heading 4
+</h4><h5 id="heading-5">
+<a class="header-anchor" href="#heading-5"></a>
+Heading 5
+</h5><h6 id="heading-6">
+<a class="header-anchor" href="#heading-6"></a>
+Heading 6
+</h6><h3 id="text-formatting">
+<a class="header-anchor" href="#text-formatting"></a>
+Text Formatting
+</h3><p><strong>Bold text</strong></p>
+<p><em>Italic text</em></p>
+<p><del>Strikethrough text</del></p>
+<hr>
+<h3 id="lists">
+<a class="header-anchor" href="#lists"></a>
+Lists
+</h3><ol>
+<li>Ordered list item 1</li>
+<li>Ordered list item 2</li>
+<li>Ordered list item 3</li>
+</ol>
+<ul>
+<li>Unordered list item 1</li>
+<li>Unordered list item 2</li>
+<li>Unordered list item 3</li>
+</ul>
+<h3 id="links-and-images">
+<a class="header-anchor" href="#links-and-images"></a>
+Links and Images
+</h3><p><a href="https://www.example.com">Link to example.com</a></p>
+        
+        <hr><p>本文2025-07-23首发于<a href='http://localhost:1313/'>ハルキの店</a>，最后修改于2025-07-23</p>]]>
+      </description>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>Hello World</title>
+      <link>http://localhost:1313/post/hello/</link>
+      <pubDate>Tue, 22 Jul 2025 11:00:00 -0700</pubDate>
+      <author>shzuo24@m.fudan.edu.cn (Haruki)</author>
+      <guid>http://localhost:1313/post/hello/</guid>
       <description>
         <![CDATA[<h1>Hello World</h1><p>作者：Haruki（shzuo24@m.fudan.edu.cn）</p>
         
           <p>💘 博麗 霊夢 💘</p>
         
-        <hr><p>本文2023-03-15首发于<a href='http://localhost:6581/'>ハルキの店</a>，最后修改于2023-03-15</p>]]>
+        <hr><p>本文2025-07-22首发于<a href='http://localhost:1313/'>ハルキの店</a>，最后修改于2025-07-22</p>]]>
       </description>
       
     </item>

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 :root {
-  --footer-icon: url(../images/taichi.png);
+  --footer-icon: url(../images/mygo.png);
   --top-icon: url(../images/mygo.svg);
   --sponsor-icon: url(../images/taichi.png);
   --cursor-default: url(../images/cursor/reimu-cursor-default.png), auto;
@@ -15,7 +15,7 @@
   --red-3: #87D1FC;
   --red-4: #3388BB;
   --red-5: #87D1FC;
-  --red-5-5: #3388BB;
+  --red-5-5: #f0f8ff;
   --red-6: #3388BB;
   --grey-9: #888;
   --grey-7: var(--color-default);
